@@ -10,7 +10,7 @@
     }
   ],
   "require" : {
-    "php-devil-ee": "dev-master",
+    "php-devil/php-devil-ee": "dev-master",
     "phpunit/phpunit": "6.1.3"
   }
 }
