@@ -1,0 +1,16 @@
+{
+  "name":              "php-devil/php-devil-ee-test",
+  "description":       "PHPUnit tests of PHPDevil EE",
+  "minimum-stability": "dev",
+  "license":           "MIT",
+  "authors": [
+    {
+      "name":  "Alexey Volkov",
+      "email": "alex.phpdevil@gmail.com"
+    }
+  ],
+  "require" : {
+    "php-devil-ee": "dev-master",
+    "phpunit/phpunit": "6.1.3"
+  }
+}
