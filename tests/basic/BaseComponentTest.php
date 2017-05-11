@@ -17,8 +17,9 @@ class BaseComponentTest extends TestCase
         $this->app = null;
     }
 
-    public function testTest() {
-       print_r($this->app);
-       $this->assertTrue(true);
+    public function testTest()
+    {
+        //$module = $this->app->loadModule('settings');
+        print_r($this->app);
     }
 }
