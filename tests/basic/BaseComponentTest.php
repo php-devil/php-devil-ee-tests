@@ -1,6 +1,6 @@
 <?php
 namespace tests\basic;
-use PhpDevil\web\Application;
+use app\Application;
 use PHPUnit\Framework\TestCase;
 
 class BaseComponentTest extends TestCase
@@ -9,7 +9,7 @@ class BaseComponentTest extends TestCase
 
     protected function setUp()
     {
-        $this->app = new Application(require __DIR__ . '/config/main.php');
+        $this->app = new Application();
     }
 
     protected function tearDown()
@@ -19,5 +19,6 @@ class BaseComponentTest extends TestCase
 
     public function testTest() {
        print_r($this->app);
+       $this->assertTrue(true);
     }
 }
