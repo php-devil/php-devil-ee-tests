@@ -1,7 +1,8 @@
 <?php
 namespace app\models;
+use PhpDevil\data\ActiveRecord;
 
-class UserIdenity
+class UserIdenity extends ActiveRecord
 {
 
 }

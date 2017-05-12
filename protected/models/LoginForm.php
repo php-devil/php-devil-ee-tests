@@ -1,7 +1,8 @@
 <?php
 namespace app\models;
+use PhpDevil\data\ActiveForm;
 
-class LoginForm
+class LoginForm extends ActiveForm
 {
 
 }

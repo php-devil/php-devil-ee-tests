@@ -7,7 +7,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory>vendor/php-devil/php-devil-ee</directory>
+            <directory>vendor/php-devil</directory>
         </whitelist>
     </filter>
 </phpunit>
