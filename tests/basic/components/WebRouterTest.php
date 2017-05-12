@@ -45,7 +45,7 @@ class WebRouterTest extends TestCase
         $this->assertNull($this->router->getDirectRequest('before'));
     }
 
-    public function testAppDirectActionPergorming()
+    public function testAppDirectActionPerforming()
     {
         $result = null;
         $hr = new RequestHandler('/test/');
@@ -54,5 +54,16 @@ class WebRouterTest extends TestCase
             $result = $this->app->performDirectRequest($direct);
         }
         $this->assertEquals('actionTest of app DefaultController', $result);
+    }
+
+    public function testModDirectActionPerforming()
+    {
+        $result = null;
+        $hr = new RequestHandler('/props/');
+        $this->router->handleRequest($hr);
+        if ($direct = $this->router->getDirectRequest('before')) {
+            $result = $this->app->performDirectRequest($direct);
+        }
+        $this->assertEquals('actionTest of TestController of SettingsModule', $result);
     }
 }
