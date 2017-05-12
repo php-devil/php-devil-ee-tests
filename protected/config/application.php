@@ -9,6 +9,14 @@ return [
             'idenity' => \app\models\UserIdenity::class,
         ],
 
+        'router' => [
+            'beforeModules' => [
+                '/'       => ['default',  'index'],
+                '/test/'  => ['default',  'test'],
+                '/props/' => ['settings', 'test', 'test']
+            ],
+        ],
+
         // подключение пользовательского компонента
         'test' => [
             'class'  => \app\components\custom\CustomComponent::class,
@@ -35,5 +43,9 @@ return [
 
     'modules' => [
         'back'     => \app\modules\back\BackendModule::class,
+        'settings' => [
+            'class' => \app\modules\settings\SettingsModule::class,
+            'mount' => '/settings/',
+        ]
     ],
 ];
